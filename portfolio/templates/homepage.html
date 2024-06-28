@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshitij Akarsh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">Kshitij Akarsh</div>
+    </header>
+
+    <div class="land">
+        <div class="main-content">
+            <div class="text-container">
+                <h2>About Me</h2>
+                <p>Hello, I'm Kshitij Akarsh, a passionate Computer Science Engineering student with a strong interest in software development. Currently focused on mastering Django while proficient in Python and Java, I aspire to innovate and create meaningful solutions in the tech industry. My goal is to become a successful engineer by continuously learning and applying new skills to tackle challenges and contribute positively to the field.</p>
+            </div>
+            <div class="image-container">
+                <img src="{% static 'myphoto.jpg' %}" alt="Image 1">
+            </div>
+        </div>
+    </div>
+
+    <div class="learner">
+        <div class="main-content2">
+            <div class="text-container2">
+                <h2>I'm a <span class="big-char"> Learner </span> </h2> 
+                <p>An avid reader who finds joy in exploring diverse topics through books. I'm also passionate about crafting snippets, staying updated with the latest in technology, and actively participating in hackathons and tech events. My enthusiasm for learning and creating drives me to constantly seek new challenges and opportunities in the ever-evolving world of technology.</p>
+            </div>
+            <div class="image-container2">
+                <img src="{% static 'guywithlaptop.png' %}" alt="Image 1">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="designer">
+        <div class="main-content2">
+            <div class="text-container2">
+                <h2>I'm a <span class="big-char"> UI/UX Designer </span> </h2> 
+                <p>I have a foundational understanding of UI/UX design and am skilled in using Figma to create intuitive interfaces. While I'm still honing my proficiency, I enjoy translating ideas into visually appealing designs and believe in continuous improvement through practice and exploration in design principles and tools like Figma.</p>
+            </div>
+            <div class="image-container2">
+                <img src="{% static 'travelling.png' %}" alt="Image 1">
+            </div>
+        </div>
+    </div>
+
+    <div class="photographer">
+        <div class="main-content2">
+            <div class="text-container2">
+                <h2>I'm a <span class="big-char"> photographer </span> </h2> 
+                <p>I have a deep passion for capturing the beauty of nature through photography and creating cinematic videos. Mountains, in particular, hold a special place in my heart, drawing me in with their majestic allure and serene landscapes. Exploring these rugged terrains not only inspires my creativity but also allows me to immerse myself in the tranquility and grandeur of the natural world.</p>
+            </div>
+            <div class="image-container3">
+                <img src="{% static 'photographer.jpg' %}" alt="Image 1">
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="{% url 'myclicks' %}" class="centered-button">Checkout My Clicks!</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>2024 Kshitij Akarsh. All rights reserved.</p>
+    </div>
+
+
+
+    <!-- Add more sections as needed -->
+
+    <!-- Placeholder for scrolling space -->
+   
+
+</body>
+</html>
