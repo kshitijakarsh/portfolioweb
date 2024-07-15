@@ -4,34 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Clicks</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Image Cards Grid</title>
   <link rel="stylesheet" href="{% static 'clicks.css' %}">
-
 </head>
 <body>
-    <header>
-        <div class="logo">Kshitij Akarsh</div>
-    </header>
   <div class="container">
-    <div class="card">
+    <div class="card" onclick="openCard('image1.jpg')">
         <img src="{% static 'myclicks/click4.jpg' %}" alt="Image 1">
     </div>
-    <div class="card">
+    <div class="card" onclick="openCard('image2.jpg')">
         <img src="{% static 'myclicks/click1.jpg' %}" alt="Image 1">
     </div>
-    <div class="card">
-        <img src="{% static 'myclicks/click7.jpg' %}" alt="Image 1">
-    </div>
-    <div class="card">
+    <div class="card" onclick="openCard('image3.jpg')">
         <img src="{% static 'myclicks/click3.jpg' %}" alt="Image 1">
     </div>
-    <div class="card">
+    <div class="card" onclick="openCard('image4.jpg')">
         <img src="{% static 'myclicks/click5.jpg' %}" alt="Image 1">
     </div>
-    <div class="card">
+    <div class="card" onclick="openCard('image5.jpg')">
         <img src="{% static 'myclicks/click6.jpg' %}" alt="Image 1">
     </div>
+    <div class="card" onclick="openCard('image6.jpg')">
+        <img src="{% static 'myclicks/click7.jpg' %}" alt="Image 1">
+    </div>
   </div>
+
+  <div id="largeCard" class="large-card">
+    <img id="largeCardImage" src="" alt="Large Card Image">
+  </div>
+
+  <script src="{% static 'script.js' %}"></script>
 </body>
 </html>

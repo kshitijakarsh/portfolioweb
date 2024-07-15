@@ -1,55 +1,55 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  header {
-    font-family: "Montserrat", sans-serif;
-    background-color: #000; /* Dark background */
-    color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: left;
-    padding: 15px 90px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure header is above other content */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Gap between cards */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.logo {
-    font-size: 1.5rem; /* Larger font size */
+
+.card {
+  width: 100%; /* Full width of grid cell */
+  height: 200px; /* Fixed height of each card */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
-  
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px; /* Gap between cards */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .card {
-    width: 100%; /* Full width of grid cell */
-    height: 200px; /* Fixed height of each card */
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire card */
-    transition: transform 0.2s;
-  }
-  
-  .card:hover img {
-    transform: scale(1.1); /* Zoom effect on hover */
-  }
-  
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire card */
+  transition: transform 0.2s;
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.large-card {
+  display: none; /* Hidden by default */
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.large-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the entire card */
+}
